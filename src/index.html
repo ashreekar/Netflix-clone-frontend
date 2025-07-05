@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix Clone</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body class="bg-black">
-    <header class="flex flex-row justify-between px-10 py-7 z-0">
+    <header class="flex flex-row justify-between items-center px-10 py-7 fixed top-0 z-10 w-[100%]">
         <h2 class="text-white text-3xl"><span class="text-red-500 p-0 text-3xl">A</span>vengers</h2>
         <nav class="text-white flex gap-3">
             <a href="#Home">Home </a>
@@ -20,14 +24,61 @@
             <a href="#Contact">Contact</a>
         </nav>
     </header>
-    <section class="bg-[url('comps/bg-1.png')] w-[100vw] h-[100vh] top-0 fixed z-10 opacity-10">
+    <section class="bg-[url('img/home1.jpg')] h-[100vh] top-0 opacity-[0.5] top-image"></section>
+
+    <section class="flex flex-col absolute top-[50%] left-[50%] justify-center items-center htmesec z-10">
+        <h2 class="text-red-700 text-3xl">Always Protect the Earth</h2>
+        <p class="text-grey text-white text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <button class="p-2 w-30 bg-red-700 border-1 border-red-700 rounded-xl text-white cursor-pointer">Get started</button>
     </section>
 
-    <section class="flex flex-col tran justify-center items-center h-[100vh]">
-        <h2 class="text-white">Contact Us</h2>
-        <p class="text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-            Reprehenderit nihil ipsa adipisci quas possimus eos provident labore dolore, consequatur cum!</p>
-        <button class="p-4 w-30 bg-red-700 border-1 border-red-700 rounded-3xl text-white">Click here</button>
+    <section class="w-100vw flex flex-col bg-black items-center justify-center w-full h-[100vh]">
+        <h2 class="mt-5 text-3xl text-red-700">Our about</h2>
+        <section class="flex mt-5 w-[80%]  bg-white">
+            <article class="w-[50%] h-[100%]"><img src="img/contact.jpg" alt="" class="h-[100%] w-[100%]"></article>
+            <article class="p-5 flex flex-col justify-center items-center shadow-2xl text-black w-[50%] gap-6">
+                <h3 class="text-2xl font-bold">Why choose us</h3>
+                <p class="text-xl text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, placeat natus! Dicta, voluptates? Similique sed voluptatem quasi quam obcaecati minima non ducimus ex dicta repellendus, natus suscipit. Vero, est excepturi!</p>
+                <input type="button" value="Read more" class="p-2 w-30 bg-red-700 border-1 border-red-700 rounded-xl text-white cursor-pointer">
+            </article>
+        </section>
+    </section>
+
+    <section class="items-center flex flex-col justify-center w-[100vw]">
+        <h1 class="text-red-700 text-3xl">Our Heros</h1>
+
+        <section class="grid grid-cols-3 gap-4 w-[100%] px-20 justify-center items-center relative">
+            <section class="h-[400px] w-[300px] overflow-hidden">
+            <img src="img/g-1.jpg" alt="" class="h-[100%] w-[100%]">
+
+            <section class="h-[100%] w-[100%] flex flex-col items-center justify-center">
+                <h1 class="text-amber-100">Docyor straranfge</h1>
+                <p class="text-amber-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, velit.</p>
+                <input type="button" value="Read more" class="p-2 w-30 bg-red-700 border-1 border-red-700 rounded-xl text-white cursor-pointer">
+            </section>
+            </section>
+
+            <section class="h-[400px] w-[300px]">
+            <img src="img/g-2.jpeg" alt="" class="h-[100%] w-[100%]">>
+            </section>
+
+            <section class="h-[400px] w-[300px]">
+            <img src="img/g-3.jpg" alt="" class="h-[100%] w-[100%]">>
+            </section>
+
+             <section class="h-[400px] w-[300px]">
+            <img src="img/g-4.jpg" alt="" class="h-[100%] w-[100%]">>
+            </section>
+
+            <section class="h-[400px] w-[300px]">
+            <img src="img/g-5.jpg" alt="" class="h-[100%] w-[100%]">>
+            </section>
+
+            <section class="h-[400px] w-[300px]">
+            <img src="img/g-6.jpg" alt=""class="h-[100%] w-[100%]">>
+            </section>
+        </section>
     </section>
 </body>
+
 </html>
