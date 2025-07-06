@@ -1,2 +1,49 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.top-image {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.card img {
+    transition-property: opacity;
+    transition-delay: 0.5s;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.ig-content {
+    transform: translateY(100%);
+    transform: translateZ(50%);
+    transition-property: transform;
+    transition-delay: 0.5s;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.card:hover img {
+    /* transform: translateY(-100%); */
+    opacity: 0.3;
+    transition-property: opacity;
+    transition-delay: 0.5s;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.card:hover .ig-content {
+    transform: translateY(50%);
+}
